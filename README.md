@@ -12,6 +12,8 @@ This dataset is a subset of the dataset _Countix_  [[1]](#1), consisting of only
 - After repetition-centered segmentation: 3284 training samples, if we consider each repetition as a distinct sample
 
 
+The original _Countix_ dataset can be found [here](https://sites.google.com/view/repnet).
+
 ## _CountixEffects_
 
 This is another subset of _Countix_, whose generation is oriented on the evaluation (a) the impact of the number of repetitions and (b) the contribution of repetition-based segmentation in repetitive actions that impose gradual effects in the environment. The dataset specifications are:
