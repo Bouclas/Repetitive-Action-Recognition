@@ -5,11 +5,21 @@ We provide the .csv train/test split files for the following datasets:
 
 ## _CountixHAR_
 
-This dataset is a subset of the dataset _Countix_  [[1]](#1), consisting of only the samples that have a repetition count in the range between 2 to 10, and are sourced from public YouTube videos. The resulting dataset comprises 28 action classes and consists of 718 training and 262 test videos. The training set was based on the original _Countix_ train set, whereas the test set is based on the validation set of _Countix_. The purpose of this dataset is to evaluate the contribution of repetition-oriented sequence spliting as an input sequence pre-processing step for Human Activity Recognition (HAR) methods. The application of a repetition segment-centered input sequence splitting approach, such as RepNet  [[1]](#1), increases the training sample number to 3284 training sequences, if we consider each repetition segment as a distinct training sample. The increase in the dataset size indicating that we get on average 4.6 repetitions per sample.
+This dataset is a subset of the dataset _Countix_  [[1]](#1), consisting of only the samples that have a repetition count in the range between 2 to 10, and are sourced from public YouTube videos. The purpose of this dataset is to evaluate the contribution of repetition-oriented sequence spliting as an input sequence pre-processing step for Human Activity Recognition (HAR) methods. The dataset specifications are:
+
+- 28 action classes, repetition count range 2-10, on average 4.6 repetitions per sample
+- 718 training samples, 262 test samples
+- After repetition-centered segmentation: 3284 training samples, if we consider each repetition as a distinct sample
+
 
 ## _CountixEffects_
 
-This is another subset of _Countix_, whose generation is oriented on the evaluation (a) the impact of the number of repetitions and (b) the contribution of repetition-based segmentation in repetitive actions that impose gradual effects in the environment. _CountixEffects_ expands the repetition count range to actions that exhibit up to 20 repetitions, and consists of 5 action classes. Two of them (sawing wood, slicing onion) produce gradual effects. The rest 3 actions (headbanging, doing aerobics, running on treadmill) do not produce gradual effects on an object/scene/actor. The resulting CountixEffects dataset consists of 323 training and 100 test videos. Based on the ground-truth repetition counts provided in the original Countix dataset, CountixEffects exhibits an average of 9.67 repetitions per sample (regarding the training subset) and an augmented set of 3124 training samples, after the application of a repetition-centered sequence spliting approach.
+This is another subset of _Countix_, whose generation is oriented on the evaluation (a) the impact of the number of repetitions and (b) the contribution of repetition-based segmentation in repetitive actions that impose gradual effects in the environment. The dataset specifications are:
+
+- 5 actions, where 2 produce an effect on object/scene/actor, and, 3 do not.
+- 323 training and 100 test videos
+- After repetition-centered segmentation: 3124 training samples, if we consider each repetition as a distinct sample
+
 
 ##
 ## _Repetition segment detection_
